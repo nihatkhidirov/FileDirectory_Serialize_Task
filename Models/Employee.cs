@@ -8,14 +8,16 @@ namespace FileDirectorySerialize_Task.Models
 {
     internal class Employee
     {
-        static int counter = 0;
-        public Employee()
+      
+
+        public Employee(int iD, string name, decimal salary)
         {
-            counter++;
-            this.ID= counter;
+            ID = iD;
+            Name = name;
+            Salary = salary;
         }
+
         public int ID { get; set; }
-        static int EmployeeID { get; set; }
     
         public string Name { get; set; }
         public decimal Salary { get; set; }
